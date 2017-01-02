@@ -1,0 +1,634 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2BEE5C28B18A0AA240F9E995 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B579D5BB14FE59F8A4237823 /* Foundation.framework */; };
+		47EE1087BCF512C5A745E31A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56B6029A60B72471A4D4D7CE /* Cocoa.framework */; };
+		4F34EAA166C34C5E51A0AA2A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56B6029A60B72471A4D4D7CE /* Cocoa.framework */; };
+		9D06CC1C11B1AE336FFCFA80 /* Articulations.h in Headers */ = {isa = PBXBuildFile; fileRef = 7BD8B866D60E7B661F16A39E /* Articulations.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A7B29CC8DF89285BF3283D60 /* Articulations.h in Headers */ = {isa = PBXBuildFile; fileRef = 7BD8B866D60E7B661F16A39E /* Articulations.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A87A4BEE140B8969F383514C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B579D5BB14FE59F8A4237823 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0BBE99E93230F128FA00E584 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 32469CC264B557CCD99AED46 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 42D7D832E9704A4BA8E1F3B8;
+			remoteInfo = "Articulations macOS";
+		};
+		EABBEE4FFF552D26103C976A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 32469CC264B557CCD99AED46 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A7A0A80521071F83698E7121;
+			remoteInfo = "Articulations iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		56B6029A60B72471A4D4D7CE /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		7BD8B866D60E7B661F16A39E /* Articulations.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Articulations.h; path = Articulations/Articulations.h; sourceTree = "<group>"; };
+		8B26817021479684BA16B641 /* Articulations iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Articulations iOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F8F5E98C8C81027017D26A1 /* Articulations macOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Articulations macOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B579D5BB14FE59F8A4237823 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		C2FE2E655B58B97E7E53F369 /* Articulations iOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Articulations iOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5BEEE3A48F15214DF5400B4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = Articulations/Info.plist; sourceTree = "<group>"; };
+		D41C9CBEA862C88B723037CD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = ArticulationsTests/Info.plist; sourceTree = "<group>"; };
+		F04119073625D21FFCE5054C /* Articulations macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Articulations macOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1FDC2029DB01BB1288BA1577 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BEE5C28B18A0AA240F9E995 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		500ADC00B379B4CD8D7D3773 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47EE1087BCF512C5A745E31A /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72C94A40B1E3A62B7DCD9128 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F34EAA166C34C5E51A0AA2A /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C28385A4EF4C9F3C8923690 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A87A4BEE140B8969F383514C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0EF92EE0C06C79EDA9713B82 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				B579D5BB14FE59F8A4237823 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		0F31D3E250BD1477096C3B08 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8B26817021479684BA16B641 /* Articulations iOS.framework */,
+				C2FE2E655B58B97E7E53F369 /* Articulations iOS Tests.xctest */,
+				F04119073625D21FFCE5054C /* Articulations macOS.framework */,
+				8F8F5E98C8C81027017D26A1 /* Articulations macOS Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		136ECE3F5B019A64A831ABBF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C5BEEE3A48F15214DF5400B4 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		207C156B155A139C43319877 = {
+			isa = PBXGroup;
+			children = (
+				0F31D3E250BD1477096C3B08 /* Products */,
+				5066272B2947ED00D2A5E9F7 /* Frameworks */,
+				92F4F6FD439A0944A055F0A7 /* Articulations */,
+				5906C0726CBC56E628000492 /* ArticulationsTests */,
+				7BD8B866D60E7B661F16A39E /* Articulations.h */,
+			);
+			sourceTree = "<group>";
+		};
+		5066272B2947ED00D2A5E9F7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0EF92EE0C06C79EDA9713B82 /* iOS */,
+				6853E438790678CB8DD9CC1F /* OS X */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		51F5A897940694077C5F202F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D41C9CBEA862C88B723037CD /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5906C0726CBC56E628000492 /* ArticulationsTests */ = {
+			isa = PBXGroup;
+			children = (
+				51F5A897940694077C5F202F /* Supporting Files */,
+			);
+			name = ArticulationsTests;
+			sourceTree = "<group>";
+		};
+		6853E438790678CB8DD9CC1F /* OS X */ = {
+			isa = PBXGroup;
+			children = (
+				56B6029A60B72471A4D4D7CE /* Cocoa.framework */,
+			);
+			name = "OS X";
+			sourceTree = "<group>";
+		};
+		92F4F6FD439A0944A055F0A7 /* Articulations */ = {
+			isa = PBXGroup;
+			children = (
+				136ECE3F5B019A64A831ABBF /* Supporting Files */,
+			);
+			name = Articulations;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		11E9221B35ACEF8AD4D8E9A5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D06CC1C11B1AE336FFCFA80 /* Articulations.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		903C3230D8D13D3114160B12 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7B29CC8DF89285BF3283D60 /* Articulations.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		42D7D832E9704A4BA8E1F3B8 /* Articulations macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 319DF53913493312461545CF /* Build configuration list for PBXNativeTarget "Articulations macOS" */;
+			buildPhases = (
+				5D149629A2A9E5BBE040FF38 /* Sources */,
+				500ADC00B379B4CD8D7D3773 /* Frameworks */,
+				11E9221B35ACEF8AD4D8E9A5 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Articulations macOS";
+			productName = "Articulations macOS";
+			productReference = F04119073625D21FFCE5054C /* Articulations macOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		498992462A563463C927EC85 /* Articulations macOS Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 64EBD1B96E94286FD187C3C5 /* Build configuration list for PBXNativeTarget "Articulations macOS Tests" */;
+			buildPhases = (
+				D59081AE99B7F6F8FDF85726 /* Sources */,
+				72C94A40B1E3A62B7DCD9128 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2868CF7D92E3D3EBDFABC918 /* PBXTargetDependency */,
+			);
+			name = "Articulations macOS Tests";
+			productName = "Articulations macOS Tests";
+			productReference = 8F8F5E98C8C81027017D26A1 /* Articulations macOS Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7C176786CD592FB759EF50C8 /* Articulations iOS Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 137CB5A9BF935492E29CF36C /* Build configuration list for PBXNativeTarget "Articulations iOS Tests" */;
+			buildPhases = (
+				FF56D428CE11F9CC11D15E2F /* Sources */,
+				8C28385A4EF4C9F3C8923690 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3C47B75980BEDC9A4314163F /* PBXTargetDependency */,
+			);
+			name = "Articulations iOS Tests";
+			productName = "Articulations iOS Tests";
+			productReference = C2FE2E655B58B97E7E53F369 /* Articulations iOS Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A7A0A80521071F83698E7121 /* Articulations iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5EEACB29D1E1B0A856202302 /* Build configuration list for PBXNativeTarget "Articulations iOS" */;
+			buildPhases = (
+				1D6E4FD7B2FCE6115F6ABD20 /* Sources */,
+				1FDC2029DB01BB1288BA1577 /* Frameworks */,
+				903C3230D8D13D3114160B12 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Articulations iOS";
+			productName = "Articulations iOS";
+			productReference = 8B26817021479684BA16B641 /* Articulations iOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		32469CC264B557CCD99AED46 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 268C5F09729D62DF879DA94F /* Build configuration list for PBXProject "Articulations" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 207C156B155A139C43319877;
+			productRefGroup = 0F31D3E250BD1477096C3B08 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A7A0A80521071F83698E7121 /* Articulations iOS */,
+				7C176786CD592FB759EF50C8 /* Articulations iOS Tests */,
+				42D7D832E9704A4BA8E1F3B8 /* Articulations macOS */,
+				498992462A563463C927EC85 /* Articulations macOS Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D6E4FD7B2FCE6115F6ABD20 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D149629A2A9E5BBE040FF38 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D59081AE99B7F6F8FDF85726 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF56D428CE11F9CC11D15E2F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2868CF7D92E3D3EBDFABC918 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Articulations macOS";
+			target = 42D7D832E9704A4BA8E1F3B8 /* Articulations macOS */;
+			targetProxy = 0BBE99E93230F128FA00E584 /* PBXContainerItemProxy */;
+		};
+		3C47B75980BEDC9A4314163F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Articulations iOS";
+			target = A7A0A80521071F83698E7121 /* Articulations iOS */;
+			targetProxy = EABBEE4FFF552D26103C976A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1A5BFE4E160AF195330F768C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = ArticulationsTests/Info.plist;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		1AF9127CA806B93D03FD631E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = ArticulationsTests/Info.plist;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		3AAE3620580609D55EB581C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = ArticulationsTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		55A588E3B68AE12DBFB1A183 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "-";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = Articulations/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dn-m.Articulations";
+				PRODUCT_NAME = Articulations;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		59F029082AFB7598BB5E30D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = Articulations/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dn-m.Articulations";
+				PRODUCT_NAME = Articulations;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5B85411AF57E42134AC1057C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6768AB3F3203E54C2768D6EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Debug;
+		};
+		8BB2E461FD122304E28B3BEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = ArticulationsTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BA2E6CB00D83ADB16A4825E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "-";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = Articulations/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dn-m.Articulations";
+				PRODUCT_NAME = Articulations;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DCF935378C8318B8D2D15999 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = Articulations/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dn-m.Articulations";
+				PRODUCT_NAME = Articulations;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		137CB5A9BF935492E29CF36C /* Build configuration list for PBXNativeTarget "Articulations iOS Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3AAE3620580609D55EB581C7 /* Release */,
+				8BB2E461FD122304E28B3BEA /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		268C5F09729D62DF879DA94F /* Build configuration list for PBXProject "Articulations" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6768AB3F3203E54C2768D6EE /* Debug */,
+				5B85411AF57E42134AC1057C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		319DF53913493312461545CF /* Build configuration list for PBXNativeTarget "Articulations macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCF935378C8318B8D2D15999 /* Release */,
+				59F029082AFB7598BB5E30D2 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5EEACB29D1E1B0A856202302 /* Build configuration list for PBXNativeTarget "Articulations iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55A588E3B68AE12DBFB1A183 /* Release */,
+				BA2E6CB00D83ADB16A4825E2 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		64EBD1B96E94286FD187C3C5 /* Build configuration list for PBXNativeTarget "Articulations macOS Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1AF9127CA806B93D03FD631E /* Release */,
+				1A5BFE4E160AF195330F768C /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 32469CC264B557CCD99AED46 /* Project object */;
+}
