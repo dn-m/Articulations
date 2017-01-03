@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07C20BB01E1BD763003C815C /* Articulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C20BAF1E1BD763003C815C /* Articulation.swift */; };
+		07C20BB11E1BD763003C815C /* Articulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C20BAF1E1BD763003C815C /* Articulation.swift */; };
 		2BEE5C28B18A0AA240F9E995 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B579D5BB14FE59F8A4237823 /* Foundation.framework */; };
 		47EE1087BCF512C5A745E31A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56B6029A60B72471A4D4D7CE /* Cocoa.framework */; };
 		4F34EAA166C34C5E51A0AA2A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56B6029A60B72471A4D4D7CE /* Cocoa.framework */; };
@@ -33,15 +35,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		07C20BAF1E1BD763003C815C /* Articulation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Articulation.swift; path = Articulations/Articulation.swift; sourceTree = "<group>"; };
 		56B6029A60B72471A4D4D7CE /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
 		7BD8B866D60E7B661F16A39E /* Articulations.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Articulations.h; path = Articulations/Articulations.h; sourceTree = "<group>"; };
-		8B26817021479684BA16B641 /* Articulations iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Articulations iOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B26817021479684BA16B641 /* Articulations.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Articulations.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F8F5E98C8C81027017D26A1 /* Articulations macOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Articulations macOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B579D5BB14FE59F8A4237823 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		C2FE2E655B58B97E7E53F369 /* Articulations iOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Articulations iOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5BEEE3A48F15214DF5400B4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = Articulations/Info.plist; sourceTree = "<group>"; };
 		D41C9CBEA862C88B723037CD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = ArticulationsTests/Info.plist; sourceTree = "<group>"; };
-		F04119073625D21FFCE5054C /* Articulations macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Articulations macOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F04119073625D21FFCE5054C /* Articulations.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Articulations.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,9 +94,9 @@
 		0F31D3E250BD1477096C3B08 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8B26817021479684BA16B641 /* Articulations iOS.framework */,
+				8B26817021479684BA16B641 /* Articulations.framework */,
 				C2FE2E655B58B97E7E53F369 /* Articulations iOS Tests.xctest */,
-				F04119073625D21FFCE5054C /* Articulations macOS.framework */,
+				F04119073625D21FFCE5054C /* Articulations.framework */,
 				8F8F5E98C8C81027017D26A1 /* Articulations macOS Tests.xctest */,
 			);
 			name = Products;
@@ -155,6 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				136ECE3F5B019A64A831ABBF /* Supporting Files */,
+				07C20BAF1E1BD763003C815C /* Articulation.swift */,
 			);
 			name = Articulations;
 			sourceTree = "<group>";
@@ -195,7 +199,7 @@
 			);
 			name = "Articulations macOS";
 			productName = "Articulations macOS";
-			productReference = F04119073625D21FFCE5054C /* Articulations macOS.framework */;
+			productReference = F04119073625D21FFCE5054C /* Articulations.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		498992462A563463C927EC85 /* Articulations macOS Tests */ = {
@@ -246,7 +250,7 @@
 			);
 			name = "Articulations iOS";
 			productName = "Articulations iOS";
-			productReference = 8B26817021479684BA16B641 /* Articulations iOS.framework */;
+			productReference = 8B26817021479684BA16B641 /* Articulations.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -257,6 +261,14 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0700;
+				TargetAttributes = {
+					42D7D832E9704A4BA8E1F3B8 = {
+						LastSwiftMigration = 0820;
+					};
+					A7A0A80521071F83698E7121 = {
+						LastSwiftMigration = 0820;
+					};
+				};
 			};
 			buildConfigurationList = 268C5F09729D62DF879DA94F /* Build configuration list for PBXProject "Articulations" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -283,6 +295,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07C20BB01E1BD763003C815C /* Articulation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,6 +303,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07C20BB11E1BD763003C815C /* Articulation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,6 +342,7 @@
 		1A5BFE4E160AF195330F768C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -343,6 +358,7 @@
 		1AF9127CA806B93D03FD631E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -358,6 +374,7 @@
 		3AAE3620580609D55EB581C7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -374,6 +391,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "-";
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -392,6 +410,7 @@
 				PRODUCT_NAME = Articulations;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -402,6 +421,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "-";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "-";
 				COMBINE_HIDPI_IMAGES = YES;
@@ -423,6 +443,8 @@
 				PRODUCT_NAME = Articulations;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -510,6 +532,7 @@
 		8BB2E461FD122304E28B3BEA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -526,6 +549,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "-";
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -544,6 +568,8 @@
 				PRODUCT_NAME = Articulations;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -554,6 +580,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "-";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "-";
 				COMBINE_HIDPI_IMAGES = YES;
@@ -575,6 +602,7 @@
 				PRODUCT_NAME = Articulations;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
