@@ -27,3 +27,24 @@ public struct Articulation: OptionSet {
 
     // TODO: More
 }
+
+extension Articulation: CustomStringConvertible {
+
+    // MARK: - CustomStringConvertible
+
+    /// Description
+    public var description: String {
+        switch rawValue {
+        case Articulation.staccato.rawValue:
+            return "staccato"
+        case Articulation.staccatissimo.rawValue:
+            return "staccatissimo"
+        case Articulation.tenuto.rawValue:
+            return "tenuto"
+        case Articulation.accent.rawValue:
+            return "accent"
+        default:
+            return "\(rawValue)"
+        }
+    }
+}
