@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		074A84121F09318C007C612B /* ArticulationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074A84111F09318C007C612B /* ArticulationTests.swift */; };
+		074A84131F09318C007C612B /* ArticulationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074A84111F09318C007C612B /* ArticulationTests.swift */; };
+		074A84141F0931E7007C612B /* Articulations.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B26817021479684BA16B641 /* Articulations.framework */; };
+		074A84151F0931EC007C612B /* Articulations.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F04119073625D21FFCE5054C /* Articulations.framework */; };
 		07C20BB01E1BD763003C815C /* Articulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C20BAF1E1BD763003C815C /* Articulation.swift */; };
 		07C20BB11E1BD763003C815C /* Articulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C20BAF1E1BD763003C815C /* Articulation.swift */; };
 		2BEE5C28B18A0AA240F9E995 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B579D5BB14FE59F8A4237823 /* Foundation.framework */; };
@@ -35,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		074A84111F09318C007C612B /* ArticulationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ArticulationTests.swift; path = ArticulationsTests/ArticulationTests.swift; sourceTree = "<group>"; };
 		07C20BAF1E1BD763003C815C /* Articulation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Articulation.swift; path = Articulations/Articulation.swift; sourceTree = "<group>"; };
 		56B6029A60B72471A4D4D7CE /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
 		7BD8B866D60E7B661F16A39E /* Articulations.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Articulations.h; path = Articulations/Articulations.h; sourceTree = "<group>"; };
@@ -69,6 +74,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F34EAA166C34C5E51A0AA2A /* Cocoa.framework in Frameworks */,
+				074A84151F0931EC007C612B /* Articulations.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +83,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A87A4BEE140B8969F383514C /* Foundation.framework in Frameworks */,
+				074A84141F0931E7007C612B /* Articulations.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				51F5A897940694077C5F202F /* Supporting Files */,
+				074A84111F09318C007C612B /* ArticulationTests.swift */,
 			);
 			name = ArticulationsTests;
 			sourceTree = "<group>";
@@ -265,6 +273,12 @@
 					42D7D832E9704A4BA8E1F3B8 = {
 						LastSwiftMigration = 0820;
 					};
+					498992462A563463C927EC85 = {
+						LastSwiftMigration = 0830;
+					};
+					7C176786CD592FB759EF50C8 = {
+						LastSwiftMigration = 0830;
+					};
 					A7A0A80521071F83698E7121 = {
 						LastSwiftMigration = 0820;
 					};
@@ -311,6 +325,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				074A84131F09318C007C612B /* ArticulationTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,6 +333,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				074A84121F09318C007C612B /* ArticulationTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,15 +359,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = ArticulationsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -359,15 +379,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = ArticulationsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -375,15 +398,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = ArticulationsTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -533,15 +559,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = ArticulationsTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
